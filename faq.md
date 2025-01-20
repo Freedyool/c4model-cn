@@ -1,9 +1,9 @@
----
+<!-- ---
 layout: default
 title: FAQ
 nav_order: 20
 permalink: /faq
----
+--- -->
 
 # Frequently asked questions
 

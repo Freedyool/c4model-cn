@@ -1,9 +1,9 @@
----
+<!-- ---
 layout: default
 title: Tooling
 nav_order: 6
 permalink: /tooling
----
+--- -->
 
 # Tooling
 
@@ -68,7 +68,7 @@ A model is just data! And we, as software developers, have an endless supply of 
 
 Here's a collection of tooling that provides some degree of specific support for the C4 model.
 
-<script type="application/javascript" src="https://code.jquery.com/jquery-3.7.1.slim.min.js"></script>
+<!-- <script type="application/javascript" src="https://code.jquery.com/jquery-3.7.1.slim.min.js"></script> -->
 
 <style>
 .toolingOptionFilter {
@@ -275,7 +275,7 @@ Here's a collection of tooling that provides some degree of specific support for
     </div>
 </div>
 
-<script>
+<!-- <script>
     $('#toolingOpenSourceFilter, #toolingDiagrammingFilter, #toolingModelBasedFilter, #toolingAsCodeFilter, #toolingWithUIFilter, #toolingRenderingToolIndependentFilter, #toolingStaticDiagramsFilter, #toolingDynamicDiagramsFilter, #toolingDeploymentDiagramsFilter').change(function() {
         filterToolingOptions();
     });
@@ -328,4 +328,4 @@ Here's a collection of tooling that provides some degree of specific support for
     }
 
     filterToolingOptions();
-</script>
+</script> -->

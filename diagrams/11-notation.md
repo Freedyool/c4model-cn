@@ -1,10 +1,10 @@
----
+<!-- ---
 layout: default
 title: Notation
 parent: Diagrams
 nav_order: 11
 permalink: /diagrams/notation
----
+--- -->
 
 # Notation
 
@@ -93,5 +93,5 @@ used to show the same C4 model abstractions in very different ways.
 
 - <sup>1</sup> "C4 = blue and grey boxes" is a common misconception, which is why the example diagrams presented on this website now cycle between blue, green, and red versions!
 
-<script type="application/javascript" src="https://code.jquery.com/jquery-3.7.1.slim.min.js"></script>
-<script type="application/javascript" src="/assets/c4model.js"></script>
+<!-- <script type="application/javascript" src="https://code.jquery.com/jquery-3.7.1.slim.min.js"></script>
+<script type="application/javascript" src="/assets/c4model.js"></script> -->

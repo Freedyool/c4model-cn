@@ -1,10 +1,10 @@
----
+<!-- ---
 layout: default
 title: Deployment diagram
 parent: Diagrams
 nav_order: 7
 permalink: /diagrams/deployment
----
+--- -->
 
 # Deployment diagram
 
@@ -61,5 +61,5 @@ infrastructure architects, and operations/support staff.
 
 Yes.
 
-<script type="application/javascript" src="https://code.jquery.com/jquery-3.7.1.slim.min.js"></script>
-<script type="application/javascript" src="/assets/c4model.js"></script>
+<!-- <script type="application/javascript" src="https://code.jquery.com/jquery-3.7.1.slim.min.js"></script>
+<script type="application/javascript" src="/assets/c4model.js"></script> -->

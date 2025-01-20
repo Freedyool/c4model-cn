@@ -1,10 +1,10 @@
----
+<!-- ---
 layout: default
 title: FAQ
 parent: Diagrams
 nav_order: 99
 permalink: /diagrams/faq
----
+--- -->
 
 # Frequently asked questions
 

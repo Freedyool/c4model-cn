@@ -1,10 +1,10 @@
----
+<!-- ---
 layout: default
 title: Queues and topics
 parent: Abstractions
 nav_order: 12
 permalink: /abstractions/queues-and-topics
----
+--- -->
 
 # Queues and topics
 

@@ -1,10 +1,10 @@
----
+<!-- ---
 layout: default
 title: 1. Software system
 parent: Abstractions
 nav_order: 1
 permalink: /abstractions/software-system
----
+--- -->
 
 # Software system
 

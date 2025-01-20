@@ -1,10 +1,10 @@
----
+<!-- ---
 layout: default
 title: 3. Component diagram
 parent: Diagrams
 nav_order: 3
 permalink: /diagrams/component
----
+--- -->
 
 # Component diagram
 
@@ -43,5 +43,5 @@ Software architects and developers.
 No, only create component diagrams if you feel they add value, and consider automating their creation
 for long-lived documentation.
 
-<script type="application/javascript" src="https://code.jquery.com/jquery-3.7.1.slim.min.js"></script>
-<script type="application/javascript" src="/assets/c4model.js"></script>
+<!-- <script type="application/javascript" src="https://code.jquery.com/jquery-3.7.1.slim.min.js"></script>
+<script type="application/javascript" src="/assets/c4model.js"></script> -->

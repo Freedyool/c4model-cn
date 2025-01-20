@@ -1,10 +1,10 @@
----
+<!-- ---
 layout: default
 title: Review checklist
 parent: Diagrams
 nav_order: 12
 permalink: /diagrams/checklist
----
+--- -->
 
 # Software architecture diagram review checklist
 

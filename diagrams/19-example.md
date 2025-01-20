@@ -1,10 +1,10 @@
----
+<!-- ---
 layout: default
 title: Example
 parent: Diagrams
 nav_order: 19
 permalink: /diagrams/example
----
+--- -->
 
 # Example
 
@@ -18,5 +18,5 @@ double-click to zoom-in.
 
 - [Source](https://structurizr.com/dsl?example=big-bank-plc) (this version has automatic layout enabled, so will look different than the version above)
 
-<script type="application/javascript" src="https://code.jquery.com/jquery-3.7.1.slim.min.js"></script>
-<script type="application/javascript" src="/assets/c4model.js"></script>
+<!-- <script type="application/javascript" src="https://code.jquery.com/jquery-3.7.1.slim.min.js"></script>
+<script type="application/javascript" src="/assets/c4model.js"></script> -->

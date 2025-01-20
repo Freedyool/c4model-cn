@@ -1,9 +1,9 @@
----
+<!-- ---
 layout: default
 title: Introduction
 nav_order: 2
 permalink: /introduction
----
+--- -->
 
 # Introduction
 
@@ -38,5 +38,5 @@ The goal of the C4 model is to raise the level of maturity associated with softw
 
 [![](/images/software-architecture-diagramming-maturity-model.png)](/images/software-architecture-diagramming-maturity-model.png)
 
-<script type="application/javascript" src="https://code.jquery.com/jquery-3.7.1.slim.min.js"></script>
-<script type="application/javascript" src="/assets/c4model.js"></script>
+<!-- <script type="application/javascript" src="https://code.jquery.com/jquery-3.7.1.slim.min.js"></script> -->
+<!-- <script type="application/javascript" src="/assets/c4model.js"></script> -->

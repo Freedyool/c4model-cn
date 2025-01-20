@@ -1,10 +1,10 @@
----
+<!-- ---
 layout: default
 title: 1. System context diagram
 parent: Diagrams
 nav_order: 1
 permalink: /diagrams/system-context
----
+--- -->
 
 # System context diagram
 
@@ -46,5 +46,5 @@ Everybody, both technical and non-technical people, inside and outside the softw
 
 Yes, a system context diagram is recommended for all software development teams.
 
-<script type="application/javascript" src="https://code.jquery.com/jquery-3.7.1.slim.min.js"></script>
-<script type="application/javascript" src="/assets/c4model.js"></script>
+<!-- <script type="application/javascript" src="https://code.jquery.com/jquery-3.7.1.slim.min.js"></script>
+<script type="application/javascript" src="/assets/c4model.js"></script> -->

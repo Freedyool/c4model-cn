@@ -1,10 +1,10 @@
----
+<!-- ---
 layout: default
 title: 2. Container diagram
 parent: Diagrams
 nav_order: 2
 permalink: /diagrams/container
----
+--- -->
 
 # Container diagram
 
@@ -52,5 +52,5 @@ This diagram says nothing about clustering, load balancers, replication, failove
 across different environments (e.g. production, staging, development, etc). This information is better captured
 via one or more [deployment diagrams](/diagrams/deployment).
 
-<script type="application/javascript" src="https://code.jquery.com/jquery-3.7.1.slim.min.js"></script>
-<script type="application/javascript" src="/assets/c4model.js"></script>
+<!-- <script type="application/javascript" src="https://code.jquery.com/jquery-3.7.1.slim.min.js"></script>
+<script type="application/javascript" src="/assets/c4model.js"></script> -->

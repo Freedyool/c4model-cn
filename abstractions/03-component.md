@@ -1,10 +1,10 @@
----
+<!-- ---
 layout: default
 title: 3. Component
 parent: Abstractions
 nav_order: 3
 permalink: /abstractions/component
----
+--- -->
 
 # Component
 

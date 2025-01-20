@@ -1,9 +1,9 @@
----
+<!-- ---
 layout: default
 title: More information
 nav_order: 90
 permalink: /more
----
+--- -->
 
 # More information
 

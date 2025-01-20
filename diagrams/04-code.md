@@ -1,10 +1,10 @@
----
+<!-- ---
 layout: default
 title: 4. Code diagram
 parent: Diagrams
 nav_order: 4
 permalink: /diagrams/code
----
+--- -->
 
 # Code diagram
 
