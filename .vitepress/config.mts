@@ -4,7 +4,7 @@ import { defineConfig } from 'vitepress'
 export default defineConfig({
   title: "C4-Model-zh",
   description: "C4-Model 中文文档",
-  ignoreDeadLinks: true,
+  ignoreDeadLinks: 'localhostLinks',
   themeConfig: {
     // https://vitepress.dev/reference/default-theme-config
     nav: [
@@ -47,7 +47,7 @@ export default defineConfig({
               { text: 'Deployment diagram', link: '/07-deployment'},
               { text: 'Notation', link: '/11-notation' },
               { text: 'Review checklist', link: '/12-checklist' },
-              // { text: 'Example', link: '/19-example' },
+              { text: 'Example', link: '/19-example' },
               { text: 'FAQ', link: '/99-faq' }
             ]
           },
@@ -115,7 +115,7 @@ export default defineConfig({
                   { text: 'Deployment diagram', link: '07-deployment'},
                   { text: 'Notation', link: '11-notation' },
                   { text: 'Review checklist', link: '12-checklist' },
-                  // { text: 'Example', link: '19-example' },
+                  { text: 'Example', link: '19-example' },
                   { text: 'FAQ', link: '99-faq' }
                 ]
               },

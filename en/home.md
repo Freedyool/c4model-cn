@@ -7,10 +7,10 @@ title: Home
 
 The C4 model is:
 
-1. A set of [hierarchical abstractions](/abstractions) (software systems, containers, components, and code).
-2. A set of [hierarchical diagrams](/diagrams) (system context, containers, components, and code).
-3. [Notation independent](/diagrams/notation).
-4. [Tooling independent](/tooling).
+1. A set of [hierarchical abstractions](/en/abstractions/index) (software systems, containers, components, and code).
+2. A set of [hierarchical diagrams](/en/diagrams/index) (system context, containers, components, and code).
+3. [Notation independent](/en/diagrams/11-notation).
+4. [Tooling independent](/en/tooling).
 
 [![An overview of the C4 model for visualising software architecture](/images/c4-overview.png)](/images/c4-overview.png)
 
@@ -38,29 +38,3 @@ Recorded at "Agile on the Beach 2019", July 2019
 </td>
 </tr>
 </table>
-
-<script>
-    const links = {
-        'abstractions': '/abstractions',
-        'systemcontextdiagram': '/diagrams/system-context',
-        'containerdiagram': '/diagrams/container',
-        'componentdiagram': '/diagrams/component',
-        'codediagram': '/diagrams/code',
-        'systemlandscapediagram': '/diagrams/system-landscape',
-        'dynamicdiagram': '/diagrams/dynamic',
-        'deploymentdiagram': '/diagrams/deployment',
-        'notation': '/diagrams/notation',
-        'tooling': '/tooling',
-        'faq': '/faq',
-    };
-    var hash = window.location.hash;
-
-    if (hash && hash.length > 0) {
-        hash = hash.substring(1).toLowerCase();
-        const link = links[hash];
-
-        if (link) {
-            window.location.href = link;
-        }
-    }
-</script>

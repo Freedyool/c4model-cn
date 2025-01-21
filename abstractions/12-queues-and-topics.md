@@ -71,7 +71,7 @@ The examples presented have assumed that a single software system is comprised f
 via queues and topics. In other words, everything on the diagram sits "inside" the software system boundary, and is
 "owned" by that single software system.
 
-If you've read the [microservices](/abstractions/microservices) recommendations and you're modelling each
+If you've read the [microservices](/abstractions/11-microservices) recommendations and you're modelling each
 service as a separate software system, you additionally need to consider who "owns" the queues and topics.
 If service A (a software system) has a point-to-point relationship with service B (also a software system)
 via a queue named X (a container) ... who owns the container? Does service A own the definition of the message format

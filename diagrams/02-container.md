@@ -47,7 +47,7 @@ Yes, a container diagram is recommended for all software development teams.
 
 This diagram says nothing about clustering, load balancers, replication, failover, etc because it will likely vary
 across different environments (e.g. production, staging, development, etc). This information is better captured
-via one or more [deployment diagrams](/diagrams/deployment).
+via one or more [deployment diagrams](/diagrams/07-deployment).
 
 <!-- <script type="application/javascript" src="https://code.jquery.com/jquery-3.7.1.slim.min.js"></script>
 <script type="application/javascript" src="/assets/c4model.js"></script> -->

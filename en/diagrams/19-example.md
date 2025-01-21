@@ -8,7 +8,7 @@ title: Example
 Hover your mouse over the diagram below, find elements with a ![zoom-in symbol](/images/zoom-in.svg) and 
 double-click to zoom-in.
 
-<script type="text/javascript" src="https://static.structurizr.com/js/structurizr-embed.js"></script>
+<!-- <script type="text/javascript" src="https://static.structurizr.com/js/structurizr-embed.js"></script> -->
 <iframe id="myEmbeddedDiagram" class="thumbnail" src="https://structurizr.com/embed/36141?diagram=SystemContext&diagramSelector=true&iframe=myEmbeddedDiagram" width="100%" marginwidth="0" marginheight="0" frameborder="0" scrolling="no" allowfullscreen="true"></iframe>
 
 ## Notes

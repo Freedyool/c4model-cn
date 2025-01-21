@@ -12,7 +12,7 @@ hero:
       link: /home
     - theme: alt
       text: 原文网站
-      link: https://c4model.com
+      link: /en/home
 
 features:
   - title: Feature A

@@ -11,3 +11,5 @@ If you'd like to author/view the docs locally:
 3. `npm ci`
 4. `npm run docs:dev`
 5. Open http://localhost:5173
+
+And you can run `npm run docs:build` to make sure your commit will pass the build check.

@@ -6,10 +6,10 @@ title: 首页
 # 软件架构可视化：C4 模型
 
 C4 模型包括:
-1. [分层抽象](./abstractions)（对软件系统、容器、组件和代码进行抽象）。
-2. [分层框图](./diagrams)（用框图表示系统上下文、容器、组件和代码）。
-3. [注释](./diagrams/notation)。
-4. [工具](./tooling)。
+1. [分层抽象](/abstractions/index)（对软件系统、容器、组件和代码进行抽象）。
+2. [分层框图](/diagrams/index)（用框图表示系统上下文、容器、组件和代码）。
+3. [注释](/diagrams/11-notation)。
+4. [工具](/tooling)。
 
 [![C4 软件架构可视化模型概要图](/images/c4-overview.png)](/images/c4-overview.png)
 
@@ -36,29 +36,3 @@ C4 模型是一种易于学习、对开发人员友好的软件架构图示方�
 </tr>
 </thead>
 </table>
-
-<script>
-    const links = {
-        'abstractions': '/abstractions',
-        'systemcontextdiagram': '/diagrams/system-context',
-        'containerdiagram': '/diagrams/container',
-        'componentdiagram': '/diagrams/component',
-        'codediagram': '/diagrams/code',
-        'systemlandscapediagram': '/diagrams/system-landscape',
-        'dynamicdiagram': '/diagrams/dynamic',
-        'deploymentdiagram': '/diagrams/deployment',
-        'notation': '/diagrams/notation',
-        'tooling': '/tooling',
-        'faq': '/faq',
-    };
-    var hash = window.location.hash;
-
-    if (hash && hash.length > 0) {
-        hash = hash.substring(1).toLowerCase();
-        const link = links[hash];
-
-        if (link) {
-            window.location.href = link;
-        }
-    }
-</script>
