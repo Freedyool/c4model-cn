@@ -1,6 +1,6 @@
 ---
 layout: doc
-title: 常见问题
+title: FAQ
 ---
 
 # Frequently asked questions

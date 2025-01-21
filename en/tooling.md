@@ -1,6 +1,6 @@
 ---
 layout: doc
-title: 使用工具
+title: Tooling
 ---
 
 # Tooling

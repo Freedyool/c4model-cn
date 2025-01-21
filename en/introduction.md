@@ -1,19 +1,30 @@
 ---
 layout: doc
-title: 介绍
+title: Introduction
 ---
-# 介绍
 
-问建筑行业的人如何用视觉传达建筑的架构，你会看到场地平面图、楼层平面图、立面图、剖面图和细节图。相比之下，问软件开发人员如何用图表传达软件系统的架构，你可能会得到一堆混乱的方框和线条……不一致的符号（颜色编码、形状、线条样式等）、模糊的命名、未标记的关系、通用术语、缺失的技术选择、混合的抽象等。
+# Introduction
+
+Ask somebody in the building industry to visually communicate the architecture of a building and you'll be presented
+with site plans, floor plans, elevation views, cross-section views and detail drawings. In contrast, ask a software
+developer to communicate the software architecture of a software system using diagrams and you'll likely get a
+confused mess of boxes and lines ... inconsistent notation (colour coding, shapes, line styles, etc), ambiguous naming,
+unlabelled relationships, generic terminology, missing technology choices, mixed abstractions, etc.
 
 | [![A software architecture sketch](/images/sketch-1.jpg)](/images/sketch-1.jpg) | [![A software architecture sketch](/images/sketch-2.jpg)](/images/sketch-2.jpg) |
 | [![A software architecture sketch](/images/sketch-3.jpg)](/images/sketch-3.jpg) | [![A software architecture sketch](/images/sketch-4.jpg)](/images/sketch-4.jpg) |
 
-在这个行业中，我们确实有统一建模语言（UML）、ArchiMate 和 SysML，但问这些是否提供了一种有效的方式来传达软件架构通常是无关紧要的，因为许多团队已经抛弃了它们，转而使用更简单的“方框和线条”图表。抛弃这些建模语言是一回事，但也许在追求敏捷的过程中，许多软件开发团队已经失去了视觉传达的能力。
+As an industry, we do have the Unified Modeling Language (UML), ArchiMate and SysML, but asking whether these provide
+an effective way to communicate software architecture is often irrelevant because many teams have already thrown them
+out in favour of much simpler "boxes and lines" diagrams. Abandoning these modelling languages is one thing but,
+perhaps in the race for agility, many software development teams have lost the ability to communicate visually.
 
-## 代码的地图
+## Maps of your code
 
-C4 模型的创建是为了帮助软件开发团队描述和传达软件架构，无论是在前期设计会议期间还是在回顾性记录现有代码库时。它是一种在不同细节层次上创建“代码地图”的方式，就像你会使用 Google 地图一样，放大和缩小你感兴趣的区域。
+The C4 model was created as a way to help software development teams describe and communicate software architecture,
+both during up-front design sessions and when retrospectively documenting an existing codebase. It's a way to create
+"maps of your code", at various levels of detail, in the same way you would use something like Google Maps to zoom in
+and out of an area you are interested in.
 
 | [![](/images/map-4.jpg)](/images/map-4.jpg) | [![](/images/map-3.jpg)](/images/map-3.jpg) | [![](/images/map-2.jpg)](/images/map-2.jpg) | [![](/images/map-1.jpg)](/images/map-1.jpg) |
 | [![](https://static.structurizr.com/workspace/36141/diagrams/SystemContext.png)](/diagrams/system-context) | [![](https://static.structurizr.com/workspace/36141/diagrams/Containers.png)](/diagrams/container) | [![](https://static.structurizr.com/workspace/36141/diagrams/Components.png)](/diagrams/component) | [![](https://static.structurizr.com/workspace/36141/diagrams/MainframeBankingSystemFacade.png)](/diagrams/code) |

@@ -1,9 +1,7 @@
-<!-- ---
-layout: default
-title: License
-nav_order: 99
-permalink: /license
---- -->
+---
+layout: doc
+title: 许可证
+---
 
 # License
 

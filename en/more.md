@@ -1,6 +1,6 @@
 ---
 layout: doc
-title: 更多信息
+title: More information
 ---
 
 # More information
