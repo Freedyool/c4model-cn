@@ -4,6 +4,7 @@ import { defineConfig } from 'vitepress'
 export default defineConfig({
   title: "C4-Model-zh",
   description: "C4-Model 中文文档",
+  ignoreDeadLinks: true,
   themeConfig: {
     // https://vitepress.dev/reference/default-theme-config
     nav: [
@@ -64,7 +65,7 @@ export default defineConfig({
 
     editLink: {
       pattern: 'https://github.dev/Freedyool/c4model-cn/blob/master/:path'
-    }
+    },
   },
 
   locales: {
