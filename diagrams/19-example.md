@@ -1,19 +1,13 @@
 ---
 layout: doc
-title: Example
+title: 示例
 ---
+# 示例
 
-# Example
+将鼠标悬停在下面的图表上，找到带有 ![zoom-in symbol](/images/zoom-in.svg) 的元素并双击以放大。
 
-Hover your mouse over the diagram below, find elements with a ![zoom-in symbol](/images/zoom-in.svg) and 
-double-click to zoom-in.
+[![](/images/example.png)](https://c4model.com/diagrams/example)
 
-<!-- <script type="text/javascript" src="https://static.structurizr.com/js/structurizr-embed.js"></script> -->
-<iframe id="myEmbeddedDiagram" class="thumbnail" src="https://structurizr.com/embed/36141?diagram=SystemContext&diagramSelector=true&iframe=myEmbeddedDiagram" width="100%" marginwidth="0" marginheight="0" frameborder="0" scrolling="no" allowfullscreen="true"></iframe>
+## 注意事项
 
-## Notes
-
-- [Source](https://structurizr.com/dsl?example=big-bank-plc) (this version has automatic layout enabled, so will look different than the version above)
-
-<!-- <script type="application/javascript" src="https://code.jquery.com/jquery-3.7.1.slim.min.js"></script>
-<script type="application/javascript" src="/assets/c4model.js"></script> -->
+- [来源](https://structurizr.com/dsl?example=big-bank-plc)（此版本启用了自动布局，因此看起来与上面的版本不同）

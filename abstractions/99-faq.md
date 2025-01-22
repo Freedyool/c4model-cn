@@ -1,62 +1,40 @@
 ---
 layout: doc
-title: FAQ
+title: 常见问题
 ---
 
-# Frequently asked questions
+# 常见问题解答
 
-## Can we change the terminology?
+## 我们可以更改术语吗？
 
-This terminology (context, containers, components and code) works for many organisations and many types of software. 
-However, sometimes an organisation will have an existing terminology that people are already familiar with. Or perhaps 
-"components" and "classes" don't easily map on to the technology being used (e.g. functional languages often use the 
-terms "module" and "function").
+这种术语（上下文、容器、组件和代码）适用于许多组织和多种类型的软件。然而，有时一个组织会有现有的术语，人们已经熟悉了。或者“组件”和“类”可能不容易映射到所使用的技术上（例如，函数式语言通常使用“模块”和“函数”这两个术语）。
 
-Feel free to modify the terminology that you use to describe software architecture at different levels of abstraction. 
-Just make sure that everybody explicitly understands it.
+请随意修改您用来描述不同抽象级别的软件架构的术语。只要确保每个人都明确理解它。
 
-## Can we add more abstraction levels?
+## 我们可以添加更多的抽象级别吗？
 
-> "A database is a database; debating whether it is also a Container or a Component just isn’t worthwhile."
+> “数据库就是数据库；争论它是否也是一个容器或组件是没有意义的。”
 
-This quote, from a [blog post](https://www.ilograph.com/blog/posts/concrete-diagramming-models/), raises a couple of interesting questions about the C4 model:
+这句话来自一篇[博客文章](https://www.ilograph.com/blog/posts/concrete-diagramming-models/)，它提出了关于C4模型的几个有趣问题：
 
-1. Are the four levels of abstraction too limited?
-2. Can we add more levels of abstraction?
+1. 四个抽象级别是否太有限了？
+2. 我们可以添加更多的抽象级别吗？
 
-Modern software systems are comprised of many different types of compile-time, runtime, deployment, and infrastructure 
-building blocks. With this in mind, it can sometimes be difficult to categorise each of these into the various 
-abstractions that make up the C4 model. A seemingly easier approach is to just add more levels of abstraction as 
-required, rather than spending time debating whether a "database" is a container or a component.
+现代软件系统由许多不同类型的编译时、运行时、部署和基础设施构建块组成。考虑到这一点，有时很难将每个构建块分类到组成C4模型的各种抽象中。一个看似更简单的方法是根据需要添加更多的抽象级别，而不是花时间争论“数据库”是容器还是组件。
 
-The problem here is that we're often too imprecise with the terminology that we use in our day-to-day work,
-which leads us to make the wrong decisions when trying to categorise the building blocks that make up our software 
-systems. The word "database" is used in the quote above, but is it being used to refer to a 
-database server, a database schema, a collection of related data, or something else entirely?
-Why is this important? As an example, the definition of the word "database" dramatically affects the 
-meaning of the following statement:
+问题在于我们在日常工作中使用的术语往往过于不精确，这导致我们在尝试分类构成我们软件系统的构建块时做出错误的决定。上面引用中使用了“数据库”这个词，但它是用来指代数据库服务器、数据库模式、一组相关数据，还是完全不同的东西？为什么这很重要？例如，“数据库”一词的定义会极大地影响以下陈述的含义：
 
-> "microservices shouldn't share a database"
+> “微服务不应该共享数据库”
 
-As an industry, we need to be more precise with the terminology that we use. Debating whether a database is a 
-container or a component forces you understand exactly what you mean by the word "database", before mapping it 
-onto the abstraction levels provided by the C4 model. The power of the C4 model is the small set of fixed/named 
-hierarchical abstractions that help teams reason about their software systems in a structured and more precise way,
-both within and across engineering teams.
+作为一个行业，我们需要更精确地使用术语。争论数据库是容器还是组件迫使你在将其映射到C4模型提供的抽象级别之前，准确理解你所说的“数据库”是什么意思。C4模型的力量在于一小组固定/命名的层次抽象，帮助团队以结构化和更精确的方式推理他们的软件系统，无论是在团队内部还是跨团队。
 
 ![](/images/flexible-abstractions-1.png)
 
-Whenever teams say, "C4 is too limiting - we need more abstractions for more flexibility", it's usually for one
-of the following reasons:
+每当团队说“C4太有限了——我们需要更多的抽象来获得更多的灵活性”时，通常是以下原因之一：
 
-- The team has misunderstood the C4 model and are misusing the abstraction levels, requiring more to be added.
-- Teams want to add more abstraction levels in order to model things that are really organisational constructs or groupings, rather than abstractions in their own right - subsystems, bounded contexts, layers, libraries, etc.
+- 团队误解了C4模型并误用了抽象级别，需要添加更多级别。
+- 团队希望添加更多的抽象级别，以便对实际上是组织结构或分组的事物进行建模，而不是它们自己的抽象——子系统、边界上下文、层、库等。
 
-Although the C4 model provides enough for most software development teams, you should certainly feel that you can add
-more abstraction levels if you have a genuine need. After all, the agile mindset tells us to "inspect and adapt" in 
-order to improve the way that we work. This should be seen an advanced manoeuvre though, and you should only consider 
-doing it if you're willing to put the effort into precisely defining those additional levels of abstraction.
-Failure to do so will ultimately lead you back to where we are today, with diagrams showing ad hoc abstractions 
-caused by an impreciseness of terminology.
+尽管C4模型为大多数软件开发团队提供了足够的支持，但如果您有真正的需求，您当然应该感到可以添加更多的抽象级别。毕竟，敏捷心态告诉我们要“检查和适应”以改进我们的工作方式。然而，这应该被视为一种高级操作，只有在您愿意投入精力精确定义这些额外的抽象级别时才应考虑这样做。否则，最终会导致我们回到今天的状态，图表显示由于术语不精确而导致的临时抽象。
 
 ![](/images/flexible-abstractions-2.png)

@@ -28,9 +28,9 @@ export default defineConfig({
               { text: '2. 容器', link: '/02-container' },
               { text: '3. 组件', link: '/03-component' },
               { text: '4. 代码', link: '/04-code' },
-              { text: 'Microservices', link: '/11-microservices' },
-              { text: 'Queues and topics', link: '/12-queues-and-topics' },
-              { text: 'FAQ', link: '/99-faq' }
+              { text: '微服务', link: '/11-microservices' },
+              { text: '队列和主题', link: '/12-queues-and-topics' },
+              { text: '常见问题', link: '/99-faq' }
             ]
           },
           {
@@ -42,19 +42,19 @@ export default defineConfig({
               { text: '2. 容器框图', link: '/02-container' },
               { text: '3. 组件框图', link: '/03-components' },
               { text: '4. 代码框图', link: '/04-code' },
-              { text: 'System landscape diagram', link: '/05-system-landscape' },
-              { text: 'Dynamic diagram', link: '/06-dynamic' },
-              { text: 'Deployment diagram', link: '/07-deployment'},
-              { text: 'Notation', link: '/11-notation' },
-              { text: 'Review checklist', link: '/12-checklist' },
-              { text: 'Example', link: '/19-example' },
-              { text: 'FAQ', link: '/99-faq' }
+              { text: '系统全景图', link: '/05-system-landscape' },
+              { text: '动态图', link: '/06-dynamic' },
+              { text: '部署图', link: '/07-deployment'},
+              { text: '符号', link: '/11-notation' },
+              { text: '审查清单', link: '/12-checklist' },
+              { text: '示例', link: '/19-example' },
+              { text: '常见问题', link: '/99-faq' }
             ]
           },
           { text : '使用工具', link: '/tooling' },
-          { text : 'FAQ', link: '/faq' },
-          { text : 'More information', link: '/more' },
-          { text : 'License', link: '/license' }
+          { text : '常见问题', link: '/faq' },
+          { text : '更多', link: '/more' },
+          { text : '许可证', link: '/license' }
         ]
       }
     ],

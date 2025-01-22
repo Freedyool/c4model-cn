@@ -1,21 +1,15 @@
 ---
 layout: doc
-title: Abstractions
+title: 抽象
 ---
 
-# Abstractions
+# 抽象
 
-In order to create some "maps of your code", we first need a common set of abstractions
-that we can use to describe the static structure of a software system. In the C4 model:
-
-> A [software system](/abstractions/01-software-system)
-> is made up of one or  more [containers](/abstractions/02-container) (applications and data stores),
-> each of which contains one or more [components](/abstractions/03-component),  which in turn are implemented by one or
-> more [code](/abstractions/04-code) elements (classes, interfaces, objects, functions, etc).
-> And people (actors, roles, personas, named individuals, etc) use the software systems that we build.
+为了创建一些“代码地图”，我们首先需要一套通用的抽象来描述软件系统的静态结构。在C4模型中：
 
 ![The abstractions behind the C4 model](/images/abstractions.png)
 
-The C4 model is an "abstraction-first" approach to diagramming software architecture, based upon abstractions that
-reflect how software architects and developers think about and build software. The small set of abstractions and
-diagram types makes the C4 model easy to learn and use.
+> 一个[软件系统](/abstractions/01-software-system)由一个或多个[容器](/abstractions/02-container)（应用程序和数据存储）组成，
+> 每个容器包含一个或多个[组件](/abstractions/03-component)，这些组件又由一个或多个[代码](/abstractions/04-code)元素（类、接口、对象、函数等）实现。
+
+C4模型是一种“抽象优先”的软件架构图示方法，基于反映软件架构师和开发人员如何思考和构建软件的抽象。少量的抽象和图示类型使C4模型易于学习和使用。

@@ -1,105 +1,80 @@
 ---
 layout: doc
-title: Microservices
+title: 微服务
 ---
 
-# Microservices
+# 微服务
 
-Broadly speaking, there are two options for diagramming microservices when using the C4 model, although it depends
-what you mean by "microservice". With that in mind, let's start from the beginning.
+广义上讲，使用C4模型绘制微服务有两种选择，尽管这取决于你对“微服务”的定义。考虑到这一点，让我们从头开始。
 
-## Stage 1 - monolithic architectural style
+## 阶段1 - 单体架构风格
 
-Imagine that we work for a small cash-strapped startup company and our task is to build a software system (named "X")
-that offers business capabilities A, B, and C to our customers. Our system context diagram might look like this:
+假设我们在一家资金紧张的小型初创公司工作，我们的任务是构建一个软件系统（名为“X”），为我们的客户提供业务能力A、B和C。我们的系统上下文图可能如下所示：
 
 [![](/images/microservices/1.png)](/images/microservices/1.png)
 
-Arguably the quickest and cheapest way to get something delivered, especially as a cash-strapped startup with a
-small engineering team, is to use a monolithic architecture, consisting of a single monolithic web application
-reading from and writing to a single monolithic database schema. The resulting container diagram looks like this:
+可以说，特别是对于一个资金紧张、工程团队规模较小的初创公司来说，最快和最便宜的交付方式是使用单体架构，由一个单体Web应用程序组成，读取和写入单一的单体数据库模式。生成的容器图如下所示：
 
 [![](/images/microservices/2.png)](/images/microservices/2.png)
 
-## Stage 2 - microservices architectural style
+## 阶段2 - 微服务架构风格
 
-A couple of years have gone by - we have some paying customers, traffic is starting to scale, we've hired a few
-more engineers, and the codebase is growing. Our monolithic architecture is starting to slow us down, so we
-make the decision to transition to a microservices architecture. That raises the question - what is a microservice?
+几年过去了——我们有了一些付费客户，流量开始增加，我们雇佣了更多的工程师，代码库也在增长。我们的单体架构开始拖慢我们的速度，因此我们决定转向微服务架构。这引出了一个问题——什么是微服务？
 
-To answer this question, we'll refer to [Microservices](https://martinfowler.com/articles/microservices.html) written
-by James Lewis and Martin Fowler:
+为了回答这个问题，我们参考了James Lewis和Martin Fowler撰写的[微服务](https://martinfowler.com/articles/microservices.html)：
 
-> In short, the microservice architectural style is an approach to developing a single application as a suite of small services, each running in its own process and communicating with lightweight mechanisms, often an HTTP resource API. These services are built around business capabilities and independently deployable by fully automated deployment machinery.
+> 简而言之，微服务架构风格是一种将单个应用程序开发为一组小型服务的方法，每个服务在自己的进程中运行，并通过轻量级机制（通常是HTTP资源API）进行通信。这些服务围绕业务能力构建，并通过完全自动化的部署机制独立部署。
 
-To help us align this with the C4 model, let's substitute "application" for "software system":
+为了帮助我们将其与C4模型对齐，让我们将“应用程序”替换为“软件系统”：
 
-> In short, the microservice architectural style is an approach to developing a single __software system__ as a suite of small services, each running in its own process and communicating with lightweight mechanisms, often an HTTP resource API. These services are built around business capabilities and independently deployable by fully automated deployment machinery.
+> 简而言之，微服务架构风格是一种将单个__软件系统__开发为一组小型服务的方法，每个服务在自己的进程中运行，并通过轻量级机制（通常是HTTP资源API）进行通信。这些服务围绕业务能力构建，并通过完全自动化的部署机制独立部署。
 
-In this stage of our startup's journey, although we've hired a few more engineers, we've decided to stay
-as a single team. Our system context diagram remains the same:
+在我们初创公司的这一阶段，尽管我们雇佣了更多的工程师，但我们决定保持单一团队。我们的系统上下文图保持不变：
 
 [![](/images/microservices/3.png)](/images/microservices/3.png)
 
-But our container diagram has changed. We've decided to retain the single monolithic UI of the existing
-web application, but move the business logic and data into individual microservices. The resulting container diagram
-now looks like this:
+但我们的容器图发生了变化。我们决定保留现有Web应用程序的单一单体UI，但将业务逻辑和数据移到各个微服务中。生成的容器图现在如下所示：
 
 [![](/images/microservices/4.png)](/images/microservices/4.png)
 
-As we're still a single engineering team, transitioning to a microservices architecture is an implementation detail
-that is only apparent inside the team boundary. This is why all seven containers are shown inside the software system 
-boundary, with each "microservice" being a combination of an API container (hexagon) and a database schema container (cylinder).
-As a result, you will notice that this container diagram doesn't show microservices as explicit boxes.
-Instead, this version of the diagram uses colour coding the show the relationship between pairs of API and database
-schema containers. If you wanted to be more explicit about this pairing, you could draw a box around each pair to
-show they are grouped together.
+由于我们仍然是一个单一的工程团队，转向微服务架构只是团队边界内显而易见的实现细节。这就是为什么所有七个容器都显示在软件系统边界内，每个“微服务”都是API容器（六边形）和数据库模式容器（圆柱体）的组合。因此，你会注意到这个容器图没有将微服务显示为明确的框。相反，这个版本的图使用颜色编码来显示API和数据库模式容器之间的关系。如果你想更明确地表示这种配对，可以在每对周围画一个框，以显示它们是分组在一起的。
 
 [![](/images/microservices/5.png)](/images/microservices/5.png)
 
-Imagine now that we are going to expand the scope of our software system to also include business capability D.
-The revised system context diagram would look like this:
+现在假设我们要扩展我们的软件系统的范围，以包括业务能力D。修订后的系统上下文图如下所示：
 
 [![](/images/microservices/6.png)](/images/microservices/6.png)
 
-And if that new business capability was implemented by a new microservice, which is just a single stateless AWS lambda,
-the revised container diagram would look like this:
+如果新的业务能力由一个新的微服务实现，而这个微服务只是一个无状态的AWS lambda，修订后的容器图如下所示：
 
 [![](/images/microservices/7.png)](/images/microservices/7.png)
 
-## Stage 3 - Conway's Law
+## 阶段3 - 康威定律
 
-As our company grows, and moves from startup to scaleup, we start looking at ways to optimise 
-delivery, and decide to look at [Conway's Law](https://en.wikipedia.org/wiki/Conway%27s_law) as a way to do this. 
-In summary, we decide to split our single engineering team into a number of teams, the result of which is that each 
-microservice will be owned by a separate team:
+随着我们的公司成长，从初创公司转变为规模化公司，我们开始寻找优化交付的方法，并决定参考[康威定律](https://en.wikipedia.org/wiki/Conway%27s_law)。总之，我们决定将单一的工程团队拆分为多个团队，结果是每个微服务将由一个单独的团队拥有：
 
-- Team X: owns software system X providing the UI related to business capabilities A, B, C, and D.
-- Team A: owns service A.
-- Team B: owns service B.
-- Team C: owns service C.
-- Team D: owns service D.
+- 团队X：拥有提供与业务能力A、B、C和D相关的UI的软件系统X。
+- 团队A：拥有服务A。
+- 团队B：拥有服务B。
+- 团队C：拥有服务C。
+- 团队D：拥有服务D。
 
-We can now use the C4 model to look at each software system from the perspective of the team that owns it,
-with each service being "promoted" from a pairing of containers into a software system. The system
-context diagram for team X now looks like this:
+我们现在可以使用C4模型从拥有它的团队的角度来看每个软件系统，每个服务从容器的配对“提升”为一个软件系统。团队X的软件系统的系统上下文图现在如下所示：
 
 [![](/images/microservices/8.png)](/images/microservices/8.png)
 
-Team X has only retained the monolithic UI, so the revised container diagram for software system X looks like this:
+团队X只保留了单体UI，因此软件系统X的修订后的容器图如下所示：
 
 [![](/images/microservices/9.png)](/images/microservices/9.png)
 
-And from the perspective of team A, the system context diagram for service A looks like this:
+从团队A的角度来看，服务A的系统上下文图如下所示：
 
 [![](/images/microservices/10.png)](/images/microservices/10.png)
 
-And the container diagram for service A looks like this:
+服务A的容器图如下所示：
 
 [![](/images/microservices/11.png)](/images/microservices/11.png)
 
-## Summary
+## 总结
 
-The approach to take for diagramming a microservices architectural style depends upon the ownership of
-the individual services, and whether you see them as an implementation detail inside a single software system or
-as separate software systems that are (or could be) owned by separate teams.
+绘制微服务架构风格的图表的方法取决于各个服务的所有权，以及你是否将它们视为单个软件系统内的实现细节，还是由不同团队拥有的独立软件系统。

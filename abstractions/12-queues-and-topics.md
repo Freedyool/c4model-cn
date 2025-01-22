@@ -1,79 +1,63 @@
 ---
 layout: doc
-title: Queues and topics
+title: 队列和主题
 ---
 
-# Queues and topics
+# 队列和主题
 
-Imagine that we have a service-based architecture, where a number of services (A and B) produce messages,
-and a number of other services (C & D) consume messages.
-A common way to diagram such an architecture is like this:
+假设我们有一个基于服务的架构，其中一些服务（A 和 B）生成消息，另一些服务（C 和 D）消费消息。
+一种常见的方式是用这样的图来表示这种架构：
 
 [![](/images/queues-and-topics/1.png)](/images/queues-and-topics/1.png)
 
-From some points of view, this diagram is a true and accurate representation of the architecture.
-Services A and B are sending messages to an intermediary, which is forwarding those messages on to services C and D.
-The problem is that the "hub and spoke" nature of this diagram tends to obscure the real story, where a
-degree of coupling may exist between the message producers and consumers.
+从某些角度来看，这个图确实准确地表示了架构。服务 A 和 B 正在向一个中介发送消息，中介将这些消息转发给服务 C 和 D。
+问题在于，这种“轮辐结构”的图往往会掩盖真实情况，即消息生产者和消费者之间可能存在一定程度的耦合。
 
-## Point-to-point
+## 点对点
 
-The problem here is being caused by us representing the message bus as a C4 container, which arguably isn't correct.
-A better approach is to think about each separate queue and topic as being a "data store".
-A message queue is essentially a data store - it's a bucket for storing data (messages),
-with producers adding data, and consumers taking it away.
-The implication here is that the queues and topics are C4 containers, rather than the message bus itself.
+问题在于我们将消息总线表示为一个 C4 容器，这可能并不正确。
+更好的方法是将每个单独的队列和主题视为一个“数据存储”。
+消息队列本质上是一个数据存储——它是一个存储数据（消息）的桶，生产者添加数据，消费者取走数据。
+这里的含义是，队列和主题是 C4 容器，而不是消息总线本身。
 
 [![](/images/queues-and-topics/2.png)](/images/queues-and-topics/2.png)
 
-In this example, we can clearly see there's a coupling between services A and C via a queue named X,
-and there's a similar point-to-point coupling between services B and D via a queue named Y.
+在这个例子中，我们可以清楚地看到服务 A 和 C 之间通过一个名为 X 的队列存在耦合，
+而服务 B 和 D 之间通过一个名为 Y 的队列存在类似的点对点耦合。
 
-Modelling queues and topics as C4 containers also provides a way to think about them independently of their
-deployment topology. At development time, you might have all queues and topics running on a single instance of a message
-bus to save resources on your laptop. The live deployment topology might see individual queues and topics deployed
-to separate message buses, brokers, or clusters for performance, scalability, or security reasons.
+将队列和主题建模为 C4 容器还提供了一种独立于其部署拓扑的思考方式。
+在开发时，您可能会将所有队列和主题运行在单个消息总线实例上，以节省笔记本电脑上的资源。
+实际的部署拓扑可能会将单个队列和主题部署到不同的消息总线、代理或集群中，以提高性能、可扩展性或安全性。
 
-If you genuinely have a point-to-point coupling via a queue, you could further simplify this diagram by omitting
-the queues, and moving the queue names to the arrows instead.
+如果您确实通过队列存在点对点耦合，可以通过省略队列并将队列名称移到箭头上来进一步简化此图。
 
 [![](/images/queues-and-topics/3.png)](/images/queues-and-topics/3.png)
 
-The result is a visually simpler and less cluttered diagram, but the queues are no
-longer as explicitly evident on the diagram. Since the C4 model is notation independent, you could additionally use a
-different line style (solid vs dashed) or colour to highlight message-based relationships.
-Neither version of the diagrams is "better" than the other, they are just telling the same story in a different way.
-It's all trade-offs.
+结果是一个视觉上更简单、更不杂乱的图，但队列在图上不再那么明显。
+由于 C4 模型是与符号无关的，您还可以使用不同的线条样式（实线与虚线）或颜色来突出消息传递关系。
+这两种版本的图都不是“更好”的，只是以不同的方式讲述同一个故事。这都是权衡。
 
-## Pub/sub
+## 发布/订阅
 
-You'll notice that all diagrams have shown messages flowing from the left of the diagram to the right,
-with the arrows labelled as "Sends messages to". Although this works well, particularly for point-to-point and
-queue-based architectures, you can also change the arrow directions to better highlight something
-more pub/sub or topic-based.
+您会注意到所有图都显示消息从图的左侧流向右侧，箭头标记为“发送消息到”。
+虽然这对于点对点和基于队列的架构非常有效，但您也可以更改箭头方向，以更好地突出发布/订阅或基于主题的内容。
 
 [![](/images/queues-and-topics/4.png)](/images/queues-and-topics/4.png)
 
-This version of the diagram better shows the roles of the message publishers and subscribers. Again, it's just a
-different way of telling the same story.
+这个版本的图更好地展示了消息发布者和订阅者的角色。再次强调，这只是以不同的方式讲述同一个故事。
 
-## Summary
+## 总结
 
-There are a number of ways to diagram message-based architectures, with the latter two of the following being "correct":
+有多种方式来绘制基于消息的架构图，以下两种是“正确的”：
 
-- Incorrect: Model the message bus as a C4 container.
-- Correct: Explicitly model queues and topics as C4 containers.
-- Correct: Implicitly model message-based interactions using a "via" notation on relationships.
+- 错误：将消息总线建模为一个 C4 容器。
+- 正确：将队列和主题明确建模为 C4 容器。
+- 正确：使用“通过”符号在关系上隐式建模基于消息的交互。
 
-## Further considerations
+## 进一步考虑
 
-The examples presented have assumed that a single software system is comprised from a number of services communicating
-via queues and topics. In other words, everything on the diagram sits "inside" the software system boundary, and is
-"owned" by that single software system.
+示例假设单个软件系统由多个通过队列和主题通信的服务组成。换句话说，图上的所有内容都位于软件系统边界内，并且由该单个软件系统“拥有”。
 
-If you've read the [microservices](/abstractions/11-microservices) recommendations and you're modelling each
-service as a separate software system, you additionally need to consider who "owns" the queues and topics.
-If service A (a software system) has a point-to-point relationship with service B (also a software system)
-via a queue named X (a container) ... who owns the container? Does service A own the definition of the message format
-and operation of the queue, or is it service B? Or perhaps it's jointly owned, or owned by somebody else entirely.
-Ownership will impact the diagrams.
+如果您阅读了[微服务](/abstractions/11-microservices)的建议，并且将每个服务建模为一个独立的软件系统，您还需要考虑谁“拥有”队列和主题。
+如果服务 A（一个软件系统）与服务 B（也是一个软件系统）通过一个名为 X 的队列（一个容器）存在点对点关系……谁拥有这个容器？
+是服务 A 拥有消息格式的定义和队列的操作，还是服务 B？或者可能是共同拥有，或者完全由其他人拥有。所有权将影响图表。

@@ -1,6 +1,8 @@
 # Structurizr documentation
 
-This repo contains the zh version of the website published at https://c4model.com
+This repo contains the zh version of the website published at https://c4model.com.
+
+You can visit https://c4.yooll.ltd to obtain the latest document.
 
 ## Local authoring
 

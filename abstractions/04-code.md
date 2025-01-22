@@ -1,9 +1,8 @@
 ---
 layout: doc
-title: 4. Code
+title: 4. 代码
 ---
 
-# Code
+# 代码
 
-Finally, components are made up of one or more code elements constructed with the basic building blocks
-of the programming language that you're using - classes, interfaces, enums, functions, objects, etc.
+最后，组件由一个或多个代码元素组成，这些代码元素是用您所使用的编程语言的基本构建块构建的——类、接口、枚举、函数、对象等。

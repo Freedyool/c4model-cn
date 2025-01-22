@@ -1,34 +1,30 @@
 ---
 layout: doc
-title: 4. Code diagram
+title: 4. 代码框图
 ---
 
-# Code diagram
+# 代码框图
 
-Finally, you can zoom in to each component to show how it is implemented as code; using UML class diagrams, entity
-relationship diagrams or similar.
+最后，您可以放大每个组件以显示其如何作为代码实现；使用 UML 类图、实体关系图或类似图表。
 
-This is an optional level of detail and is often available on-demand from tooling such as IDEs. Ideally this
-diagram would be automatically generated using tooling (e.g. an IDE or UML modelling tool), and you should consider
-showing only those attributes and methods that allow you to tell the story that you want to tell. This level of detail
-is not recommended for anything but the most important or complex components.
+这是一个可选的详细级别，通常可以从 IDE 等工具按需获取。理想情况下，此图应使用工具（例如 IDE 或 UML 建模工具）自动生成，并且您应考虑仅显示那些允许您讲述所需故事的属性和方法。除最重要或最复杂的组件外，不建议使用此详细级别。
 
-## Example
+## 示例
 
 [![A code diagram](https://static.structurizr.com/workspace/36141/diagrams/MainframeBankingSystemFacade.png)](https://static.structurizr.com/workspace/36141/diagrams/MainframeBankingSystemFacade.png)
 
-## Scope
+## 范围
 
-A single component.
+单个组件。
 
-## Primary elements
+## 主要元素
 
-Code elements (e.g. classes, interfaces, objects, functions, database tables, etc) within the component in scope.
+组件范围内的代码元素（例如类、接口、对象、函数、数据库表等）。
 
-## Intended audience
+## 目标受众
 
-Software architects and developers.
+软件架构师和开发人员。
 
-## Recommended?
+## 推荐？
 
-No, particularly for long-lived documentation because most IDEs can generate this level of detail on demand.
+不推荐，特别是对于长期文档，因为大多数 IDE 可以按需生成此详细级别。

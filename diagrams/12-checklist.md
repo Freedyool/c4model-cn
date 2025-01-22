@@ -1,36 +1,42 @@
 ---
 layout: doc
-title: Review checklist
+title: 审查清单
 ---
 
-# Software architecture diagram review checklist
+# 软件架构图审查清单
 
-## General
+## 通用
 
-| Does the diagram have a title? | Yes | No |
-| Do you understand what the diagram type is? | Yes | No |
-| Do you understand what the diagram scope is? | Yes | No |
-| Does the diagram have a key/legend? | Yes | No |
+| 项目 | - | - |
+| :-----------: | :--: | :--: |
+| 图表是否有标题？ | 是 | 否 |
+| 你理解图表类型吗？ | 是 | 否 |
+| 你理解图表范围吗？ | 是 | 否 |
+| 图表是否有关键/图例？ | 是 | 否 |
 
-## Elements
+## 元素
 
-| Does every element have a name? | Yes | No |
-| Do you understand the type of every element? (i.e. the level of abstraction; e.g. software system, container, etc) | Yes | No |
-| Do you understand what every element does? | Yes | No |
-| Where applicable, do you understand the technology choices associated with every element? | Yes | No |
-| Do you understand the meaning of all acronyms and abbreviations used? | Yes | No |
-| Do you understand the meaning of all colours used? | Yes | No |
-| Do you understand the meaning of all shapes used? | Yes | No |
-| Do you understand the meaning of all icons used? | Yes | No |
-| Do you understand the meaning of all border styles used? (e.g. solid, dashed, etc) | Yes | No |
-| Do you understand the meaning of all element sizes used? (e.g. small vs large boxes) | Yes | No |
+| 项目 | - | - |
+| :-----------: | :--: | :--: |
+| 每个元素都有名称吗？ | 是 | 否 |
+| 你理解每个元素的类型吗？（即抽象级别；例如软件系统、容器等） | 是 | 否 |
+| 你理解每个元素的作用吗？ | 是 | 否 |
+| 在适用的情况下，你理解与每个元素相关的技术选择吗？ | 是 | 否 |
+| 你理解使用的所有缩写和首字母缩略词的含义吗？ | 是 | 否 |
+| 你理解使用的所有颜色的含义吗？ | 是 | 否 |
+| 你理解使用的所有形状的含义吗？ | 是 | 否 |
+| 你理解使用的所有图标的含义吗？ | 是 | 否 |
+| 你理解使用的所有边框样式的含义吗？（例如实线、虚线等） | 是 | 否 |
+| 你理解使用的所有元素大小的含义吗？（例如小框与大框） | 是 | 否 |
 
-## Relationships
+## 关系
 
-| Does every line have a label describing the intent of that relationship? | Yes | No |
-| Does the description match the relationship direction? | Yes | No |
-| Where applicable, do you understand the technology choices associated with every relationship? (e.g. protocols for inter-process communication) | Yes | No |
-| Do you understand the meaning of all acronyms and abbreviations used? | Yes | No |
-| Do you understand the meaning of all colours used? | Yes | No |
-| Do you understand the meaning of all arrow heads used? | Yes | No |
-| Do you understand the meaning of all line styles used? (e.g. solid, dashed, etc) | Yes | No |
+| 项目 | - | - |
+| :-----------: | :--: | :--: |
+| 每条线都有描述其关系意图的标签吗？ | 是 | 否 |
+| 描述与关系方向匹配吗？ | 是 | 否 |
+| 在适用的情况下，你理解与每个关系相关的技术选择吗？（例如进程间通信的协议） | 是 | 否 |
+| 你理解使用的所有缩写和首字母缩略词的含义吗？ | 是 | 否 |
+| 你理解使用的所有颜色的含义吗？ | 是 | 否 |
+| 你理解使用的所有箭头的含义吗？ | 是 | 否 |
+| 你理解使用的所有线条样式的含义吗？（例如实线、虚线等） | 是 | 否 |

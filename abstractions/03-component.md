@@ -1,98 +1,56 @@
 ---
 layout: doc
-title: 3. Component
+title: 3. 组件
 ---
 
-# Component
+# 组件
 
-The word "component" is a hugely overloaded term in the software development industry but, in the C4 model,
-a component is a grouping of related functionality encapsulated behind a well-defined interface.
-If you're using a language like Java or C#, the simplest way to think of a component is that it's a collection
-of implementation classes behind an interface.
+在软件开发行业中，“组件”一词是一个被广泛使用的术语，但在C4模型中，组件是通过一个定义良好的接口封装在一起的相关功能的分组。如果你使用的是Java或C#等语言，最简单的方式是将组件视为一个接口后面的实现类集合。
 
-With the C4 model, components are *not* separately deployable units. Instead, it's the container that's the
-deployable unit. In other words, all components inside a container execute in the same process space.
-Aspects such as how components are packaged (e.g. one component vs many components per JAR file, DLL,
-shared library, etc) is an orthogonal concern.
+在C4模型中，组件*不是*独立部署的单元。相反，容器才是可部署的单元。换句话说，容器内的所有组件在同一个进程空间中执行。组件如何打包（例如，一个组件与多个组件在一个JAR文件、DLL、共享库等中）是一个正交问题。
 
-## Components vs code?
+## 组件与代码？
 
-A component is a way to step up one level of abstraction from the code-level building blocks that you have in the
-programming language that you're using. For example:
+组件是一种从你所使用的编程语言中的代码级构建块提升一个抽象层次的方法。例如：
 
-- __Object-oriented programming languages (e.g. Java, C#, C++, etc)__: A component is made up of classes and interfaces.
-- __Procedural programming languages (e.g. C)__: A component could be made up of a number of C files in a particular directory.
-- __JavaScript__: A component could be a JavaScript module, which is made up of a number of objects and functions.
-- __Functional programming languages__: A component could be a module (a concept supported by languages such as F#, Haskell, etc), which is a logical grouping of related functions, types, etc.
+- __面向对象编程语言（例如Java、C#、C++等）__：组件由类和接口组成。
+- __过程式编程语言（例如C）__：组件可以由特定目录中的多个C文件组成。
+- __JavaScript__：组件可以是一个JavaScript模块，由多个对象和函数组成。
+- __函数式编程语言__：组件可以是一个模块（如F#、Haskell等语言支持的概念），它是相关函数、类型等的逻辑分组。
 
-If you're using an object-oriented programming language, your components will be implemented using one or more classes.
-Let's look at a quick example to better define what a component is in the context of some code.
+如果你使用的是面向对象编程语言，你的组件将使用一个或多个类来实现。让我们看一个快速示例，以更好地定义在某些代码上下文中的组件。
 
-The [Spring PetClinic](https://github.com/spring-projects/spring-petclinic) application is a sample
-codebase that illustrates how to build a Java web application using the Spring MVC framework.
-From a non-technical perspective, it's a software system designed for an imaginary pet clinic that stores information
-about pets and their owners, visits made to the clinic, and the vets who work there. The system is only designed to
-be used by employees of the clinic. From a technical perspective, the Spring PetClinic system consists of a web
-application and a relational database schema.
+[Spring PetClinic](https://github.com/spring-projects/spring-petclinic)应用程序是一个示例代码库，展示了如何使用Spring MVC框架构建Java Web应用程序。从非技术角度来看，它是一个为虚构的宠物诊所设计的软件系统，存储有关宠物及其主人、诊所访问记录和工作的兽医的信息。该系统仅供诊所员工使用。从技术角度来看，Spring PetClinic系统由一个Web应用程序和一个关系数据库模式组成。
 
-The version<sup>1</sup> of the web application we'll look at here is a typical layered architecture consisting of a number of
-web MVC controllers, a service containing "business logic" and some repositories for data access. There are also
-some domain and util classes too. If you download a copy of the GitHub repository<sup>2</sup>, open it in your IDE of choice
-and visualise it by reverse-engineering a UML class diagram from the code, you'll get something like this.
+我们将在这里查看的Web应用程序版本<sup>1</sup>是一个典型的分层架构，由多个Web MVC控制器、包含“业务逻辑”的服务和一些数据访问的存储库组成。还有一些领域和工具类。如果你下载GitHub存储库的副本<sup>2</sup>，在你选择的IDE中打开它，并通过代码反向工程生成UML类图，你会得到类似这样的东西。
 
 [![](/images/components-vs-classes-1.png)](/images/components-vs-classes-1.png)
 
-As you would expect, this diagram is showing you all the Java classes and interfaces that make up the Spring
-PetClinic web application, plus all the relationships between them. The properties and methods are hidden on
-the diagram because they add too much noise to the picture. This isn't a complex codebase by any stretch of the
-imagination but, by showing classes and interfaces, the diagram is showing too much detail.
+正如你所期望的，这个图显示了组成Spring PetClinic Web应用程序的所有Java类和接口，以及它们之间的所有关系。图中隐藏了属性和方法，因为它们会给图增加太多噪音。这个代码库并不复杂，但通过显示类和接口，图显示了太多细节。
 
-Let's remove those classes that aren't useful to having an "architecture" discussion about the system.
-In other words, let's only show those classes/interfaces that have some significance from a static structure
-perspective. In concrete terms, for this specific codebase, it means excluding the model/domain classes
-(they are just data structures) and util classes.
+让我们移除那些对系统“架构”讨论没有用的类。换句话说，只显示那些从静态结构角度有意义的类/接口。具体来说，对于这个代码库，这意味着排除模型/领域类（它们只是数据结构）和工具类。
 
 [![](/images/components-vs-classes-2.png)](/images/components-vs-classes-2.png)
 
-After a little rearranging, we now have a simpler diagram with which to reason about the software architecture.
-We can also see the architectural layers again (controllers, services and repositories). But this diagram is still
-showing _code-level elements_ (i.e. classes and interfaces). In order to zoom up one level, we need to identify which
-of these code-level elements can be grouped together to form "components". The strategy for grouping code-level elements
-into components will vary from codebase to codebase but, for this codebase,
-the strategy might look like this.
+经过一些重新排列，我们现在有了一个更简单的图来推理软件架构。我们还可以再次看到架构层（控制器、服务和存储库）。但这个图仍然显示_代码级元素_（即类和接口）。为了提升一个层次，我们需要识别哪些代码级元素可以组合在一起形成“组件”。将代码级元素分组为组件的策略会因代码库而异，但对于这个代码库，策略可能如下所示。
 
 [![](/images/components-vs-classes-3.png)](/images/components-vs-classes-3.png)
 
-Each of the blue boxes represents a "component" in this codebase. In summary, each of the
-web controllers is a separate component, along with the result of combining the remaining interfaces and their
-implementation classes. If we remove the code level noise, we get a picture like this.
+每个蓝色框代表这个代码库中的一个“组件”。总之，每个Web控制器是一个单独的组件，以及将剩余的接口及其实现类组合在一起的结果。如果我们移除代码级噪音，我们会得到这样的图。
 
 [![](/images/components-vs-classes-4.png)](/images/components-vs-classes-4.png)
 
-In essence, we're grouping the classes and interfaces into components to form units of related functionality.
-You will likely have shared code (e.g. abstract base classes, supporting classes, helper classes, utility classes, etc)
-that are used across many components, such as the ```JdbcPetVisitExtractor``` in this example. Some can be refactored
-and moved "inside" a particular component, but some of them are inevitable.
+本质上，我们将类和接口分组为组件，以形成相关功能的单元。你可能会有共享代码（例如抽象基类、支持类、帮助类、工具类等），这些代码在许多组件中使用，例如这个例子中的```JdbcPetVisitExtractor```。有些可以重构并移动到特定组件“内部”，但有些是不可避免的。
 
-Although this example illustrates a traditional layered architecture, the same principles are applicable regardless of
-how you package your code (e.g. by layer, feature or component) or the architectural style in use (e.g. layered,
-hexagonal, ports and adapters, etc). If your codebase is small enough, you can go through this process manually.
-For larger codebases though, you'll likely want to consider automatic generation of component diagrams by
-reverse-engineering your codebase ([example](https://github.com/structurizr/java/blob/master/structurizr-dsl/src/test/resources/dsl/spring-petclinic/workspace.dsl)).
+虽然这个例子展示了一个传统的分层架构，但无论你如何打包代码（例如按层、功能或组件）或使用的架构风格（例如分层、六边形、端口和适配器等），相同的原则都适用。如果你的代码库足够小，你可以手动完成这个过程。但对于较大的代码库，你可能需要考虑通过反向工程代码库自动生成组件图（[示例](https://github.com/structurizr/java/blob/master/structurizr-dsl/src/test/resources/dsl/spring-petclinic/workspace.dsl)）。
 
-- <sup>1</sup> the diagrams shown here do not reflect the latest version of the Spring PetClinic, but are sufficient for the discussion
-- <sup>2</sup> `git checkout 95de1d9f8bf63560915331664b27a4a75ce1f1f6` is the version these diagrams were based upon
+- <sup>1</sup> 这里显示的图不反映Spring PetClinic的最新版本，但足以进行讨论
+- <sup>2</sup> `git checkout 95de1d9f8bf63560915331664b27a4a75ce1f1f6` 是这些图基于的版本
 
-## FAQ
+## 常见问题
 
-### Is a Java JAR, C# assembly, DLL, module, package, namespace, folder etc a component?
+### Java JAR、C#程序集、DLL、模块、包、命名空间、文件夹等是组件吗？
 
-Perhaps but, again, typically not. The C4 model is about showing the runtime units (containers) and how
-functionality is partitioned across them (components), rather than organisational units such as Java JAR files,
-C# assemblies, DLLs, modules, packages, namespaces or folder structures.
+也许是，但通常不是。C4模型是关于显示运行时单元（容器）以及功能如何在它们之间划分（组件），而不是组织单元，如Java JAR文件、C#程序集、DLL、模块、包、命名空间或文件夹结构。
 
-Of course, there may be a one-to-one mapping between these constructs and a component; e.g. if you're building
-a hexagonal architecture, you may create a single Java JAR file or C# assembly per component. On the other hand,
-a single component might be implemented using code from a number of JAR files, which is typically what happens
-when you start to consider third-party frameworks/libraries, and how they become embedded in your codebase.
-
+当然，这些构造和组件之间可能存在一对一的映射；例如，如果你正在构建一个六边形架构，你可能会为每个组件创建一个单独的Java JAR文件或C#程序集。另一方面，单个组件可能会使用多个JAR文件中的代码来实现，这通常发生在你开始考虑第三方框架/库以及它们如何嵌入你的代码库时。

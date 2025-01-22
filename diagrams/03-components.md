@@ -1,44 +1,38 @@
 ---
 layout: doc
-title: 3. Component diagram
+title: 3. 组件框图
 ---
 
-# Component diagram
+# 组件框图
 
-Next you can zoom in and decompose each container further to identify the major structural building blocks and their
-interactions.
+接下来，您可以放大并进一步分解每个容器，以识别主要的结构构建块及其交互。
 
-The Component diagram shows how a container is made up of a number of "components", what each of those components are,
-their responsibilities and the technology/implementation details.
+组件图显示了一个容器是由多个“组件”组成的，每个组件是什么，它们的职责以及技术/实现细节。
 
-## Example
+## 示例
 
 [![A component diagram](https://static.structurizr.com/workspace/36141/diagrams/Components.png)](https://static.structurizr.com/workspace/36141/diagrams/Components.png)
 
-### Diagram key
+### 图例
 
 [![A diagram key](https://static.structurizr.com/workspace/36141/diagrams/Components-key.png)](https://static.structurizr.com/workspace/36141/diagrams/Components-key.png)
 
-## Scope
+## 范围
 
-A single container.
+单个容器。
 
-## Primary elements
+## 主要元素
 
-Components within the container in scope.
+范围内容器中的组件。
 
-## Supporting elements
+## 支持元素
 
-Containers (within the software system in scope) plus people and software systems directly connected to the components.
+容器（在范围内的软件系统中）以及与组件直接连接的人员和软件系统。
 
-## Intended audience
+## 目标受众
 
-Software architects and developers.
+软件架构师和开发人员。
 
-## Recommended?
+## 推荐？
 
-No, only create component diagrams if you feel they add value, and consider automating their creation
-for long-lived documentation.
-
-<!-- <script type="application/javascript" src="https://code.jquery.com/jquery-3.7.1.slim.min.js"></script>
-<script type="application/javascript" src="/assets/c4model.js"></script> -->
+不，只有在您认为组件图有价值时才创建它们，并考虑自动化创建以用于长期文档。

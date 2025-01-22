@@ -1,47 +1,38 @@
 ---
 layout: doc
-title: 1. System context diagram
+title: 1. 系统上下文框图
 ---
 
-# System context diagram
+# 系统上下文框图
 
-A System Context diagram is a good starting point for diagramming and documenting a software system, allowing you to
-step back and see the big picture. Draw a diagram showing your system as a box in the centre, surrounded by its users
-and the other systems that it interacts with.
+系统上下文图是绘制和记录软件系统的一个良好起点，它允许你退后一步，看到大局。绘制一个图表，显示你的系统在中心的一个框，周围是它的用户和它交互的其他系统。
 
-Detail isn't important here as this is your zoomed out view showing a big picture of the system landscape. The focus
-should be on people (actors, roles, personas, etc) and software systems rather than technologies, protocols and other
-low-level details. It's the sort of diagram that you could show to non-technical people.
+这里细节并不重要，因为这是你的缩小视图，显示系统环境的大局。重点应该放在人（演员、角色、人物等）和软件系统上，而不是技术、协议和其他低级细节。这是一种你可以向非技术人员展示的图表。
 
-## Example
+## 示例
 
 [![A System Context diagram](https://static.structurizr.com/workspace/36141/diagrams/SystemContext.png)](https://static.structurizr.com/workspace/36141/diagrams/SystemContext.png)
 
-### Diagram key
+### 图表关键
 
 [![A diagram key](https://static.structurizr.com/workspace/36141/diagrams/SystemContext-key.png)](https://static.structurizr.com/workspace/36141/diagrams/SystemContext-key.png)
 
-## Scope
+## 范围
 
-A single software system.
+单个软件系统。
 
-## Primary elements
+## 主要元素
 
-The software system in scope.
+范围内的软件系统。
 
-## Supporting elements
+## 支持元素
 
-People (e.g. users, actors, roles, or personas) and software systems (external dependencies) that are directly connected
-to the software system in scope. Typically these other software systems sit outside the scope or boundary of your
-own software system, and you don't have responsibility or ownership of them.
+与范围内的软件系统直接连接的人（例如用户、演员、角色或人物）和软件系统（外部依赖）。通常这些其他软件系统位于你自己软件系统的范围或边界之外，你不对它们负责或拥有它们。
 
-## Intended audience
+## 目标受众
 
-Everybody, both technical and non-technical people, inside and outside the software development team.
+所有人，包括技术人员和非技术人员，软件开发团队内部和外部的所有人。
 
-## Recommended?
+## 推荐？
 
-Yes, a system context diagram is recommended for all software development teams.
-
-<!-- <script type="application/javascript" src="https://code.jquery.com/jquery-3.7.1.slim.min.js"></script>
-<script type="application/javascript" src="/assets/c4model.js"></script> -->
+是的，建议所有软件开发团队使用系统上下文图。

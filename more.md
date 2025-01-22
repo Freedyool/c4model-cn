@@ -3,67 +3,69 @@ layout: doc
 title: 更多信息
 ---
 
-# More information
+# 更多信息
 
-## Books
+## 书籍
 
-This is Simon Brown's [The C4 model for visualising software architecture](https://leanpub.com/visualising-software-architecture) 
-ebook, which is available to purchase from Leanpub in PDF, EPUB and MOBI formats.
-It forms the basis for his [workshop](https://simonbrown.je#workshop3) and includes a number of more advanced C4 model topics.
+这是 Simon Brown 的 [《用于可视化软件架构的 C4 模型》](https://leanpub.com/visualising-software-architecture) 电子书，可以从 Leanpub 购买 PDF、EPUB 和 MOBI 格式。
+它是他[研讨会](https://simonbrown.je#workshop3)的基础，并包括许多更高级的 C4 模型主题。
 
-[![The C4 model for visualising software architecture book](/images/book-small.png)](https://leanpub.com/visualising-software-architecture)
+[![用于可视化软件架构的 C4 模型书籍](/images/book-small.png)](https://leanpub.com/visualising-software-architecture)
 
-It is also referenced in the following books:
+它还在以下书籍中被引用：
 
-- [Fundamentals of Software Architecture](https://www.oreilly.com/library/view/fundamentals-of-software/9781492043447/) (Mark Richards, Neal Ford)
-- [Design It!](https://pragprog.com/titles/mkdsa/design-it/) (Michael Keeling)
-- [Software Architecture with Spring 5.0](https://www.packtpub.com/free-ebook/software-architecture-with-spring-5-0/9781788992992) (René Enríquez, Alberto Salazar)
-- [Software Architecture](https://leanpub.com/software-architecture) (Cesare Pautasso)
+- [《软件架构基础》](https://www.oreilly.com/library/view/fundamentals-of-software/9781492043447/) (Mark Richards, Neal Ford)
+- [《设计它！》](https://pragprog.com/titles/mkdsa/design-it/) (Michael Keeling)
+- [《使用 Spring 5.0 的软件架构》](https://www.packtpub.com/free-ebook/software-architecture-with-spring-5-0/9781788992992) (René Enríquez, Alberto Salazar)
+- [《软件架构》](https://leanpub.com/software-architecture) (Cesare Pautasso)
 
-## Presentations
+
+## 演讲
 
 <table style="text-align: center">
+<thead>
 <tr>
 <td>
 <iframe src="https://www.youtube-nocookie.com/embed/x2-rSnhpw0g" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
 <br />
-<b>Visualising software architecture with the C4 model</b>
+<b>使用 C4 模型可视化软件架构</b>
 <br />
-Recorded at "Agile on the Beach 2019", July 2019
+录制于 "Agile on the Beach 2019"，2019年7月
 </td>
 <td>
 <iframe src="https://www.youtube-nocookie.com/embed/LYzOc7vI-Uo" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
 <br />
-<b>C4 models as code</b>
-<br />Recorded at "Devoxx Belgium", October 2023
+<b>C4 模型作为代码</b>
+<br />录制于 "Devoxx Belgium"，2023年10月
 </td>
 </tr>
+</thead>
 </table>
 
-## Who is using C4?
+## 谁在使用 C4？
 
-Simon has personally taught the C4 model to 10,000+ people in 30+ countries;
-with conference talks, videos, books, and articles reaching many more than this.
-Other people are also teaching, speaking, and writing about the C4 model,
-plus it's been [integrated into a number of tools](/tooling).
-Here are some case studies:
+Simon 亲自向 30 多个国家的 10,000 多人教授了 C4 模型；
+通过会议演讲、视频、书籍和文章，接触到的人数远远超过这个数字。
+其他人也在教授、演讲和撰写关于 C4 模型的内容，
+此外，它已被[集成到许多工具中](/tooling)。
+以下是一些案例研究：
 
 - Spotify: [Spotify Engineering: Software Visualization - Challenge, Accepted](https://engineering.atspotify.com/2022/07/software-visualization-challenge-accepted/)
 - Boots: [The Engineering Leader: A Moment on C4 Architectural Design with Amar Mehan](https://www.theengineeringleader.com/1946930/10648894-a-moment-on-c4-architectural-design-with-amar-mehan)
 - Decathlon: [Navigating Software Architecture at Scale: Insights from Decathlon’s Architecture Process](https://www.infoq.com/news/2024/07/decathlon-architecture-process/)
 - Co-op: [LinkedIn post](https://www.linkedin.com/posts/popovdenys_diagramming-platforms-architecture-activity-7220039863813763073-1XQ3/)
 
-## Other
+## 其他
 
-And here are some other resources that reference the C4 model:
+以下是一些引用 C4 模型的其他资源：
 
-- [Wikipedia](https://en.wikipedia.org/wiki/C4_model)
+- [维基百科](https://en.wikipedia.org/wiki/C4_model)
 - [InfoQ: The C4 model for software architecture](https://www.infoq.com/articles/C4-architecture-model)
 - [InfoQ: O modelo C4 de documentação para Arquitetura de Software](https://www.infoq.com/br/articles/C4-architecture-model)
 - [InfoQ: 用于软件架构的C4模型](https://www.infoq.com/cn/articles/C4-architecture-model)
 - [InfoQ: ソフトウェアアーキテクチャのためのC4モデル](https://www.infoq.com/jp/articles/C4-architecture-model)
-- [Open Agile Architecture™, a Standard of The Open Group](https://publications.opengroup.org/c208)
-- [Agile Architecture Modeling using the ArchiMate® Language](https://publications.opengroup.org/g20e)
-- [Martin Fowler: Building Infrastructure Platforms - Communicate your technical vision](https://martinfowler.com/articles/building-infrastructure-platform.html#CommunicateYourTechnicalVision) (Poppy Rowse and Chris Shepherd)
-- [ThoughtWorks Tech Radar - Techniques - Diagrams as code](https://www.thoughtworks.com/radar/techniques/diagrams-as-code) (includes the Structurizr DSL)
-- [ThoughtWorks Tech Radar - Platforms - IcePanel](https://www.thoughtworks.com/radar/platforms/icepanel)
+- [开放敏捷架构™，开放组标准](https://publications.opengroup.org/c208)
+- [使用 ArchiMate® 语言进行敏捷架构建模](https://publications.opengroup.org/g20e)
+- [Martin Fowler: 构建基础设施平台 - 传达您的技术愿景](https://martinfowler.com/articles/building-infrastructure-platform.html#CommunicateYourTechnicalVision) (Poppy Rowse 和 Chris Shepherd)
+- [ThoughtWorks 技术雷达 - 技术 - 代码即图](https://www.thoughtworks.com/radar/techniques/diagrams-as-code) (包括 Structurizr DSL)
+- [ThoughtWorks 技术雷达 - 平台 - IcePanel](https://www.thoughtworks.com/radar/platforms/icepanel)

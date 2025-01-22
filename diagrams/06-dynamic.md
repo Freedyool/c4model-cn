@@ -1,50 +1,43 @@
 ---
 layout: doc
-title: Dynamic diagram
+title: 动态图
 ---
 
-# Dynamic diagram
+# 动态图
 
-A dynamic diagram can be useful when you want to show how elements in the static model collaborate at runtime to
-implement a user story, use case, feature, etc. This dynamic diagram is based upon a
-[UML communication diagram](https://en.wikipedia.org/wiki/Communication_diagram)
-(previously known as a "UML collaboration diagram"). It is similar to a
-[UML sequence diagram](https://en.wikipedia.org/wiki/Sequence_diagram) although it allows
-a free-form arrangement of diagram elements with numbered interactions to indicate ordering.
+当您想展示静态模型中的元素在运行时如何协作以实现用户故事、用例、功能等时，动态图会非常有用。这个动态图基于
+[UML通信图](https://en.wikipedia.org/wiki/Communication_diagram)
+（以前称为“UML协作图”）。它类似于
+[UML序列图](https://en.wikipedia.org/wiki/Sequence_diagram)，尽管它允许图表元素的自由排列，并通过编号的交互来指示顺序。
 
-## Example (collaboration style)
+## 示例（协作风格）
 
 [![A dynamic diagram](https://static.structurizr.com/workspace/36141/diagrams/SignIn.png)](https://static.structurizr.com/workspace/36141/diagrams/SignIn.png)
 
-### Diagram key
+### 图表键
 
 [![A diagram key](https://static.structurizr.com/workspace/36141/diagrams/SignIn-key.png)](https://static.structurizr.com/workspace/36141/diagrams/SignIn-key.png)
 
-## Example (sequence style)
+## 示例（序列风格）
 
 [![A dynamic diagram](/images/bigbankplc-SignIn-sequence.png)](/images/bigbankplc-SignIn-sequence.png)
 
-## Scope
+## 范围
 
-A particular feature, story, use case, etc.
+特定功能、故事、用例等。
 
-## Primary and supporting elements
+## 主要和支持元素
 
-Your choice - you can show software systems, containers, or components interacting at runtime.
+您可以选择展示在运行时交互的软件系统、容器或组件。
 
-## Intended audience
+## 目标受众
 
-Technical and non-technical people, inside and outside the software development team.
+技术和非技术人员，软件开发团队内部和外部。
 
-## Recommended?
+## 推荐？
 
-No, dynamic diagrams should be used sparingly to show interesting/recurring patterns or features that require a
-complicated set of interactions.
+不推荐，动态图应谨慎使用，以展示有趣的/经常出现的模式或需要复杂交互的功能。
 
-## Notes
+## 备注
 
-The collaboration and sequence styles show the same information in a different way,
-so feel free to use whichever you prefer.
-
-<!-- <script type="application/javascript" src="https://code.jquery.com/jquery-3.7.1.slim.min.js"></script>
-<script type="application/javascript" src="/assets/c4model.js"></script> -->
+协作和序列风格以不同的方式展示相同的信息，因此可以随意使用您喜欢的方式。

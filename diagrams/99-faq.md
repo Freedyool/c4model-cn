@@ -3,56 +3,41 @@ layout: doc
 title: FAQ
 ---
 
-# Frequently asked questions
+# 常见问题解答
 
-## Should the lines represent dependencies or data flow?
+## 线条应该表示依赖关系还是数据流？
 
-This is your choice. Sometimes diagrams work better showing dependency relationships (e.g. uses, reads from, etc),
-and sometimes data flow (e.g. customer update events) works better. Whichever you choose, make sure that the
-description of the line matches the direction of the arrow.
+这取决于你的选择。有时图表更适合显示依赖关系（例如，使用、读取等），有时数据流（例如，客户更新事件）更适合。无论你选择哪种方式，请确保线条的描述与箭头的方向匹配。
 
-It's also worth remembering that most relationships can be expressed either way, and the more explicit you can be,
-the better. For example, describing a relationship as "sends customer update events to" can be more descriptive
-than simply "customer update events".
+同样值得记住的是，大多数关系可以用任何一种方式表达，而且越明确越好。例如，将关系描述为“发送客户更新事件到”比简单地说“客户更新事件”更具描述性。
 
-## Will the diagrams become outdated quickly?
+## 图表会很快过时吗？
 
-Due to the hierarchical nature of the C4 model, each diagram will change at a different rate.
+由于C4模型的层次结构，每个图表的变化速度不同。
 
-- __System context diagram__: In most cases, the system context diagram will change very slowly, as this describes the 
-landscape that the software system is operating within.
-- __Container diagram__: Unless you're building a software system that makes heavy use of microservices or serverless 
-lambdas/functions/etc, the container diagram will also change relatively slowly.
-- __Component diagram__: For any software system under active development, the component diagrams may change frequently 
-as the team adds, removes or restructures the code into cohesive components.
-- __Code diagram__: The level 4 code (e.g. class) diagrams will potentially become outdated very quickly if the codebase is
-under active development. For this reason, the recommendation is to (1) not create them at all or (2) generate them 
-on-demand using tooling such as your IDE.
+- **系统上下文图**: 在大多数情况下，系统上下文图的变化会非常缓慢，因为它描述了软件系统所处的环境。
+- **容器图**: 除非你正在构建一个大量使用微服务或无服务器lambdas/函数等的软件系统，否则容器图的变化也会相对缓慢。
+- **组件图**: 对于任何正在积极开发的软件系统，组件图可能会频繁变化，因为团队会添加、删除或重组代码以形成内聚的组件。
+- **代码图**: 如果代码库正在积极开发，级别4的代码（例如类）图可能会非常快地过时。因此，建议（1）根本不创建它们，或（2）使用IDE等工具按需生成它们。
 
-Of course, the above only applies when you are creating your C4 diagrams by hand.
-Automatically generating your diagrams will ensure they are kept up to date and reflect reality at all times.
-Possible approaches to do this include:
+当然，上述情况仅适用于手动创建C4图表的情况。自动生成图表将确保它们始终保持最新并反映现实。可能的方法包括：
 
-- __System landscape/context diagrams__: Using existing system/service catalogs (e.g. Backstage, ServiceNow, etc) as a source of data for identifying software systems and relationships.
-- __Container diagrams__: Parsing log files or using OpenTelemetry data as a source of data for identifying microservices and relationships.
-- __Component diagrams__: Static analysis/reverse-engineering of code as a source of data for identifying components and their relationships.
-- __Deployment diagrams__: Parsing "infrastructure as code" definitions (e.g. Terraform, CloudFormation, etc) or reverse-engineering cloud environment configuration as a source of data for identifying deployment elements.
+- **系统景观/上下文图**: 使用现有的系统/服务目录（例如Backstage、ServiceNow等）作为识别软件系统和关系的数据来源。
+- **容器图**: 解析日志文件或使用OpenTelemetry数据作为识别微服务和关系的数据来源。
+- **组件图**: 静态分析/逆向工程代码作为识别组件及其关系的数据来源。
+- **部署图**: 解析“基础设施即代码”定义（例如Terraform、CloudFormation等）或逆向工程云环境配置作为识别部署元素的数据来源。
 
-## The C4 model vs UML, ArchiMate and SysML?
+## C4模型与UML、ArchiMate和SysML的比较？
 
-Although existing notations such as UML, ArchiMate and SysML already exist, many software development teams don't 
-seem to use them. Often this is because teams don't know these notations well enough, perceive them to be too 
-complicated, think they are not compatible with agile approaches or don't have the required tooling.
+尽管已有UML、ArchiMate和SysML等现有符号，但许多软件开发团队似乎并不使用它们。通常这是因为团队对这些符号不够了解，认为它们太复杂，认为它们与敏捷方法不兼容或没有所需的工具。
 
-If you are already successfully using one of these notations to communicate software architecture, and it's working, 
-stick with it. If not, try the C4 model. And don't be afraid to supplement the C4 diagrams with UML state diagrams, 
-timing diagrams, etc if you need to.
+如果你已经成功使用其中一种符号来沟通软件架构，并且效果很好，请继续使用它。如果没有，试试C4模型。如果需要，不要害怕用UML状态图、时序图等补充C4图表。
 
-## Can we combine C4 and arc42?
+## 我们可以结合C4和arc42吗？
 
-Yes, many teams do, and the C4 model is compatible with the [arc42 documentation template](http://arc42.org) as follows.
+可以，许多团队都这样做，C4模型与[arc42文档模板](http://arc42.org)兼容，如下所示。
 
-- Context and Scope => System Context diagram
-- Building Block View (level 1) => Container diagram
-- Building Block View (level 2) => Component diagram
-- Building Block View (level 3) => Code (e.g. class) diagram
+- 上下文和范围 => 系统上下文图
+- 构建块视图（级别1） => 容器图
+- 构建块视图（级别2） => 组件图
+- 构建块视图（级别3） => 代码（例如类）图

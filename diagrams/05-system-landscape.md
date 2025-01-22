@@ -1,40 +1,34 @@
 ---
 layout: doc
-title: System landscape diagram
+title: 系统全景图
 ---
 
-# System landscape diagram
+# 系统全景图
 
-The system context, container, component, and code diagrams are designed to provide a static view of
-a __single software system__ but, in the real-world, software systems never live in isolation. For this reason,
-and particularly if you are responsible for a collection/portfolio of software systems,
-it's often useful to understand how all of these software systems fit together within a given enterprise, 
-organisation, department, etc. Essentially this is a map of the software systems within the chosen scope, with a
-set of system context, container, component, and code diagrams for each software system of interest.
+系统上下文、容器、组件和代码图旨在提供__单个软件系统__的静态视图，但在现实世界中，软件系统从不孤立存在。因此，特别是如果您负责一组/组合软件系统，了解所有这些软件系统在特定企业、组织、部门等中的整体情况通常是有用的。本质上，这是所选范围内的软件系统的地图，并为每个感兴趣的软件系统提供一组系统上下文、容器、组件和代码图。
 
-From a practical perspective, a system landscape diagram is really just a system context diagram without a
-specific focus on a particular software system.
+从实际角度来看，系统全景图实际上只是一个没有特定关注点的系统上下文图。
 
-## Example
+## 示例
 
 [![A system landscape diagram](https://static.structurizr.com/workspace/28201/diagrams/SystemLandscape.png)](https://static.structurizr.com/workspace/28201/diagrams/SystemLandscape.png)
 
-### Diagram key
+### 图例
 
 [![A diagram key](https://static.structurizr.com/workspace/28201/diagrams/SystemLandscape-key.png)](https://static.structurizr.com/workspace/28201/diagrams/SystemLandscape-key.png)
 
-## Scope
+## 范围
 
-An enterprise/organisation/department/etc.
+一个企业/组织/部门等。
 
-## Primary elements
+## 主要元素
 
-People and software systems related to the chosen scope.
+与所选范围相关的人和软件系统。
 
-## Intended audience
+## 目标受众
 
-Technical and non-technical people, inside and outside the software development team.
+技术和非技术人员，软件开发团队内外的人员。
 
-## Recommended?
+## 推荐？
 
-Yes, particularly for larger organisations - it's a bridge into the enterprise architecture world.
+是的，特别是对于较大的组织——这是进入企业架构世界的桥梁。

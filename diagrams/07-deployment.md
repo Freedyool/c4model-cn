@@ -1,62 +1,49 @@
 ---
 layout: doc
-title: Deployment diagram
+title: 部署图
 ---
+# 部署图
 
-# Deployment diagram
+部署图允许您说明静态模型中的软件系统和/或容器实例如何部署到给定__部署环境__中的基础设施上（例如生产、预发布、开发等）。它基于[UML部署图](https://en.wikipedia.org/wiki/Deployment_diagram)。
 
-A deployment diagram allows you to illustrate how instances of software systems and/or containers in the static model
-are deployed on to the infrastructure within a given __deployment environment__
-(e.g. production, staging, development, etc).
-It's based upon a [UML deployment diagram](https://en.wikipedia.org/wiki/Deployment_diagram).
+__部署节点__表示运行软件系统/容器实例的位置；可能是物理基础设施（例如物理服务器或设备）、虚拟化基础设施（例如IaaS、PaaS、虚拟机）、容器化基础设施（例如Docker容器）、执行环境（例如数据库服务器、Java EE Web/应用服务器、Microsoft IIS）等。部署节点可以嵌套。
 
-A __deployment node__ represents where an instance of a software system/container is running;
-perhaps physical infrastructure (e.g. a physical server or device), virtualised infrastructure
-(e.g. IaaS, PaaS, a virtual machine), containerised infrastructure (e.g. a Docker container),
-an execution environment (e.g. a database server, Java EE web/application server, Microsoft IIS), etc.
-Deployment nodes can be nested.
+您可能还希望包括__基础设施节点__，例如DNS服务、负载均衡器、防火墙等。
 
-You may also want to include __infrastructure nodes__ such as DNS services, load balancers, firewalls, etc.
+请随意使用Amazon Web Services、Azure等提供的图标来补充您的部署图……只需确保您使用的任何图标都包含在图表的键/图例中。
 
-Feel free to use icons provided by Amazon Web Services, Azure, etc to complement your deployment diagrams ...
-just make sure any icons you use are included in your diagram key/legend.
-
-## Example 1
+## 示例 1
 
 [![A deployment diagram](https://static.structurizr.com/workspace/36141/diagrams/LiveDeployment.png)](https://static.structurizr.com/workspace/36141/diagrams/LiveDeployment.png)
 
-### Diagram key
+### 图表键
 
 [![A diagram key](https://static.structurizr.com/workspace/36141/diagrams/LiveDeployment-key.png)](https://static.structurizr.com/workspace/36141/diagrams/LiveDeployment-key.png)
 
-## Example 2
+## 示例 2
 
 [![A deployment diagram](https://static.structurizr.com/workspace/54915/diagrams/AmazonWebServicesDeployment.png)](https://static.structurizr.com/workspace/54915/diagrams/AmazonWebServicesDeployment.png)
 
-### Diagram key
+### 图表键
 
 [![A diagram key](https://static.structurizr.com/workspace/54915/diagrams/AmazonWebServicesDeployment-key.png)](https://static.structurizr.com/workspace/54915/diagrams/AmazonWebServicesDeployment-key.png)
 
-## Scope
+## 范围
 
-One or more software systems within a single deployment environment (e.g. production, staging, development, etc).
+单个部署环境（例如生产、预发布、开发等）中的一个或多个软件系统。
 
-## Primary and supporting elements
+## 主要和支持元素
 
-Deployment nodes, software system instances, and container instances.
+部署节点、软件系统实例和容器实例。
 
-## Supporting elements
+## 支持元素
 
-Infrastructure nodes used in the deployment of the software system.
+用于部署软件系统的基础设施节点。
 
-## Intended audience
+## 目标受众
 
-Technical people inside and outside of the software development team; including software architects, developers,
-infrastructure architects, and operations/support staff.
+软件开发团队内外的技术人员；包括软件架构师、开发人员、基础设施架构师和运营/支持人员。
 
-## Recommended?
+## 推荐？
 
-Yes.
-
-<!-- <script type="application/javascript" src="https://code.jquery.com/jquery-3.7.1.slim.min.js"></script>
-<script type="application/javascript" src="/assets/c4model.js"></script> -->
+是的。

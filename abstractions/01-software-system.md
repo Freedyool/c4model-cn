@@ -1,22 +1,12 @@
 ---
 layout: doc
-title: 1. Software system
+title: 1. 软件系统
 ---
 
-# Software system
+# 软件系统
 
-A software system is the highest level of abstraction and describes something that delivers value to its users,
-whether they are human or not. This includes the software system you are modelling, and the other software systems
-upon which your software system depends (or vice versa).
+软件系统是最高级别的抽象，描述了向用户（无论是人类还是其他系统）提供价值的事物。这包括您正在建模的软件系统，以及您的软件系统所依赖的其他软件系统（或反之亦然）。
 
-Unfortunately the term "software system" is the hardest of the C4 model abstractions to define, and this isn't helped
-by the fact that each organisation will also have their own terminology for describing the same thing, typically using
-terms such as "application", "product", "service", etc. One way to think about it is that a software system is
-something a single software development team is building, owns, has responsibility for, and can see the internal
-implementation details of. Perhaps the code for that software system resides in a single source code repository,
-and anybody on the team is entitled to modify it. In many cases, the boundary of a software system will correspond to
-the boundary of a single team. It may also be the case that everything inside the boundary of a software system is
-deployed at the same time.
+不幸的是，“软件系统”这个术语是C4模型抽象中最难定义的，这并没有得到帮助，因为每个组织也会有自己的术语来描述同样的事物，通常使用诸如“应用程序”、“产品”、“服务”等术语。可以这样想，软件系统是一个由单个软件开发团队构建、拥有、负责并可以看到内部实现细节的事物。也许该软件系统的代码存储在单个源代码库中，团队中的任何人都有权修改它。在许多情况下，软件系统的边界将对应于单个团队的边界。也可能是软件系统边界内的所有内容同时部署。
 
-Things that are not usually software systems in the C4 model include product domains, bounded contexts,
-business capabilities, feature teams, tribes, or squads.
+在C4模型中，通常不被视为软件系统的事物包括产品领域、限界上下文、业务能力、功能团队、部落或小队。
