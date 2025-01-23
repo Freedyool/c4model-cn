@@ -36,10 +36,10 @@ export default {
   data() {
     return {
       imageUrls: [
-        "/images/sketch-1.jpg",
-        "/images/sketch-2.jpg",
-        "/images/sketch-3.jpg",
-        "/images/sketch-4.jpg",
+        "/assets/sketch-1.CeG2gleD.jpg",
+        "/assets/sketch-2.C-bvgCOR.jpg",
+        "/assets/sketch-3.CEt4Qjs1.jpg",
+        "/assets/sketch-4.DHgP2vUx.jpg",
       ]
     };
   },

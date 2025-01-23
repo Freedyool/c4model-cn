@@ -85,10 +85,10 @@ export default {
   data() {
     return {
       imageUrls: [
-        "/images/notation-person.png",
-        "/images/notation-software-system.png",
-        "/images/notation-container.png",
-        "/images/notation-component.png",
+        "/assets/notation-person.Dn4ijWFH.png",
+        "/assets/notation-software-system.B_Lz4Hek.png",
+        "/assets/notation-container.Uwqb5xJH.png",
+        "/assets/notation-component.9YohFWWL.png",
       ]
     };
   },
