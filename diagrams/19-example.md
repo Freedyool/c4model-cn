@@ -6,7 +6,7 @@ title: 示例
 
 将鼠标悬停在下面的图表上，找到带有 ![zoom-in symbol](/images/zoom-in.svg) 的元素并双击以放大。
 
-[![](/images/example.png)](https://c4model.com/diagrams/example)
+<iframe id="myEmbeddedDiagram" class="thumbnail" src="https://structurizr.com/embed/36141?diagram=SystemContext&amp;diagramSelector=true&amp;iframe=myEmbeddedDiagram" width="736px" marginwidth="0" marginheight="0" frameborder="0" scrolling="no" allowfullscreen="true" height="553px"></iframe>
 
 ## 注意事项
 

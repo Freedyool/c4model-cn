@@ -11,7 +11,7 @@ C4 模型包括:
 3. [注释](/diagrams/11-notation)。
 4. [工具](/tooling)。
 
-[![C4 软件架构可视化模型概要图](/images/c4-overview.png)](/images/c4-overview.png)
+[![C4 软件架构可视化模型概要图](./images/c4-overview.png)](./images/c4-overview.png)
 
 ## 用途和好处
 
